@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EcoSearch | Sustainable Search</title>
+    <style>
+        :root {
+            --bg-dark: #1a1a1a;
+            --text-light: #f0f0f0;
+            --primary-green: #2ecc71;
+        }
+        
+        body {
+            margin: 0;
+            padding: 20px;
+            background: var(--bg-dark);
+            color: var(--text-light);
+            font-family: system-ui, sans-serif;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .search-bar {
+            width: 100%;
+            max-width: 600px;
+            padding: 12px;
+            margin: 40px auto;
+            border: 2px solid var(--primary-green);
+            border-radius: 24px;
+            background: transparent;
+            color: inherit;
+        }
+
+        .stats {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 20px;
+            padding: 20px;
+            background: #00000030;
+            border-radius: 12px;
+            margin-top: 40px;
+        }
+
+        .quick-links {
+            display: flex;
+            gap: 15px;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin: 30px 0;
+        }
+
+        .link-card {
+            padding: 12px 20px;
+            background: #00000050;
+            border-radius: 8px;
+            transition: transform 0.2s;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🌱 EcoSearch</h1>
+        
+        <input type="search" 
+               class="search-bar"
+               placeholder="Search the web sustainably..."
+               aria-label="Search input">
+        
+        <div class="quick-links">
+            <div class="link-card">News</div>
+            <div class="link-card">Maps</div>
+            <div class="link-card">Images</div>
+            <div class="link-card">Weather</div>
+        </div>
+
+        <div class="stats">
+            <div>
+                <h3>🌍 CO2 Saved</h3>
+                <p>12.4kg</p>
+            </div>
+            <div>
+                <h3>💡 Energy Used</h3>
+                <p>0.74kW</p>
+            </div>
+            <div>
+                <h3>🌳 Trees Planted</h3>
+                <p>1,402</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
